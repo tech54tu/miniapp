@@ -1,0 +1,11 @@
+<div class="row">
+  <%= form_for @tweet do |f| %>
+    <div class="row">
+      <div class="input-field col s6 offset-m3">
+        <textarea name='tweets' class="materialize-textarea"  rows="10" cols="30"><%= @tweet.tweets %></textarea>
+        <label for="textarea1">Edit tweet</label>
+        <input type="submit" value="Edit">
+      </div>
+    </div>
+  <% end %>
+</div>

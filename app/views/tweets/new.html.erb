@@ -1,0 +1,5 @@
+<%= form_with url: tweets_path do |form| %>
+  <h6>New Tweet</h6>
+  <%= form.text_field :tweets %>
+  <%= form.submit "Create"%>
+<% end %>
