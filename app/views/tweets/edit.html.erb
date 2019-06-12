@@ -1,5 +1,5 @@
 <div class="row">
-  <%= form_for @tweet do |f| %>
+  <%= form_with model: @tweet do |form| %>
     <div class="row">
       <div class="input-field col s6 offset-m3">
         <textarea name='tweets' class="materialize-textarea"  rows="10" cols="30"><%= @tweet.tweets %></textarea>
