@@ -11,8 +11,8 @@
           </div>
           <div class="card-action">
             <% if user_signed_in? && current_user.id == tweet.user_id %>
-              <%= link_to 'EDIT', "/tweets/#{tweet.id}/edit", method: :get %>
-              <%= link_to 'DESTROY', "/tweets/#{tweet.id}", method: :delete %>
+              <%= link_to 'EDIT', edit_tweet_path(tweet[:id]), method: :get %>
+              <%= link_to 'DESTROY', tweet_path(tweet[:id]) , method: :delete %>
             <% end %>
           </div>
         </div>
